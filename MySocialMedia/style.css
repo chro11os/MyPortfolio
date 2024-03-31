@@ -1,0 +1,41 @@
+html {
+    font-family: JetBrains Mono, monospace, sans-serif;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+    grid-template-rows: repeat(5, 1); /* 5 rows with auto height */
+    gap: 10px; /* Adjust the gap between images */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.image-grid img {
+    max-width: 120px; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*boxes*/
+.box {
+    width: 1600px; /* Set the width of the box */
+    margin: 20px auto; /* Center the box horizontally and add some space around it */
+    padding: 20px; /* Add some space inside the box */
+    background-color: #f0f0f0; /* Background color of the box */
+    border: 1px solid #ccc; /* Border of the box */
+    font-size: 16px; /* Font size for the text */
+    line-height: 1.5; /* Line height for the text */
+    text-align: justify; /* Align the text to justify */
+}
+
+
+.text {
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+    justify-content: center;
+}
