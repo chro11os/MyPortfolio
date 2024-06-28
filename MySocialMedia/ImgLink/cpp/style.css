@@ -1,5 +1,5 @@
 body {
-  font-family: 'jetBrains Mono';
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .header-text {
@@ -14,8 +14,10 @@ body {
   padding: 20px 30px;
   max-width: 400px;
   text-align: center;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, max-height 0.3s ease;
   cursor: pointer;
+  overflow: hidden;
+  max-height: 60px; /* Adjust initial height to fit the first paragraph */
 }
 
 .text-box:hover {
@@ -27,6 +29,16 @@ body {
   margin-top: 10px;
 }
 
-.text-box.expand .hidden-text {
+.text-box.expanded .hidden-text {
   display: block;
+}
+
+.text-box.expanded {
+  max-height: 200px; /* Adjust this value to fit the expanded content */
+}
+
+img {
+  width: 100%; /* Image width relative to the text-box width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px;
 }

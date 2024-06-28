@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>e-Portfolio</title>
-
-<html>
-  <body>
+</head>
+<body>
     <div class="header-text">
-      <center><h1>C++ PROJECTS</h1>
+        <center><h1>C++ PROJECTS</h1></center>
     </div>
-
     <center>
-      <div class="text-box">
-        <p>C++ terminal projects</p>
-      </div>
+        <div class="text-box" onclick="expandTextBox(this)">
+            <p class="header-text">C++ terminal projects</p>
+            <i><p class="hidden-text">"The way to get started is to quit talking and begin doing." -Walt Disney</p></i>
+            <img src="img/images/demo.png" alt="Demo">
+            
+            
+        </div>
     </center>
-  </body>
+</body>
 </html>
