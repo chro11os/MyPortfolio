@@ -1,4 +1,4 @@
-body {
+  body {
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -36,6 +36,22 @@ body {
 .text-box.expanded {
   max-height: 200px; /* Adjust this value to fit the expanded content */
 }
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container-padding {
+  padding-left: 50px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* Grid Layout */
+.item1 {grid-area: item1;}
+.item2 {grid-area: item2;}
+.item3 {grid-area: item3;}
 
 img {
   width: 100%; /* Image width relative to the text-box width */

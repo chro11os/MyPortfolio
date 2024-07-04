@@ -2,11 +2,20 @@ html {
   font-family: JetBrains Mono, monospace, sans-serif;
 }
 
+.centeredDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
-  grid-template-rows: repeat(5, 1); /* 5 rows with auto height */
-  gap: 10px; /* Adjust the gap between images */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1);
+  gap: 10px;
 }
 
 .grid-item {
@@ -14,7 +23,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100px;
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
 }
 
 .grid-item:hover {
@@ -22,35 +31,51 @@ html {
 }
 
 .image-grid img {
-  max-width: 120px; /* Ensure images don't exceed their container width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 120px;
+  height: auto;
 }
 
-/*boxes*/
 .box {
-  width: 90%; /* Set the width of the box to 90% of the parent element */
-  max-width: 1600px; /* Maximum width of the box */
-  min-width: 300px; /* Minimum width of the box */
-  margin: 20px auto; /* Center the box horizontally and add some space around it */
-  padding: 20px; /* Add some space inside the box */
-  background-color: #f0f0f0; /* Background color of the box */
-  border: 1px solid #ccc; /* Border of the box */
-  font-size: 16px; /* Font size for the text */
-  line-height: 1.5; /* Line height for the text */
-  text-align: justify; /* Align the text to justify */
+  width: 90%;
+  max-width: 1600px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.box1PFP {
+  width: 20px;
+  height: 20px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .box2 {
-  width: 90%; /* Set the width of the box to 90% of the parent element */
-  max-width: 1600px; /* Maximum width of the box */
-  min-width: 300px; /* Minimum width of the box */
-  margin: 20px auto; /* Center the box horizontally and add some space around it */
-  padding: 20px; /* Add some space inside the box */
-  background-color: #f0f0f0; /* Background color of the box */
-  border: 1px solid #ccc; /* Border of the box */
-  font-size: 16px; /* Font size for the text */
-  line-height: 1.5; /* Line height for the text */
-  text-align: justify; /* Align the text to justify */
+  width: 90%;
+  max-width: 1600px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid gray;;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  word-wrap: break-word;
+  
+}
+
+.aboutmePadding {
+  padding-top: 1%;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: 4%;
 }
 
 .mail {
@@ -61,129 +86,14 @@ html {
   height: 100%;
   max-height: 1800px;
   min-height: 500px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   padding-left: 20px;
   padding-right: 20px;
+  background-image:url("img/");
 }
 
 .text {
-  color: #333; /* Text color */
-  font-size: 16px; /* Font size */
-  justify-content: center;
-}
-
-/*Card*/
-
-.card {
-  width: 190px;
-  height: 254px;
-  background: #f5f5f5;
-  padding: 2rem 1.5rem;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
-}
-
-.card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-/*Image*/
-.card-avatar {
-  --size: 60px;
-  background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  transition: transform 0.2s ease;
-  margin-bottom: 1rem;
-}
-
-/*Card footer*/
-.card-social {
-  transform: translateY(200%);
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.card-social__item {
-  list-style: none;
-}
-
-.card-social__item svg {
-  display: block;
-  height: 18px;
-  width: 18px;
-  fill: #515f65;
-  cursor: pointer;
-  transition: fill 0.2s ease, transform 0.2s ease;
-}
-
-/*Text*/
-.card-title {
   color: #333;
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 2rem;
-}
-
-.card-subtitle {
-  color: #859ba8;
-  font-size: 0.8em;
-}
-
-/*Hover*/
-.card:hover {
-  box-shadow: 0 8px 50px #23232333;
-}
-
-.card:hover .card-info {
-  transform: translateY(-5%);
-}
-
-.card:hover .card-social {
-  transform: translateY(100%);
-  opacity: 1;
-}
-
-.card-social__item svg:hover {
-  fill: #232323;
-  transform: scale(1.1);
-}
-
-.card-avatar:hover {
-  transform: scale(1.1);
-}
-
-/*cardBox*/
-.cardBox {
-  border: #515f65 solid;
-  margin: 5px auto;
-  width: 95%;
-  max-width: 1600px;
-  min-width: 300px;
-  height: 100%;
-  max-height: 1800px;
-  min-height: 500px;
-  border: 1px solid #ccc;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Card grid container */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: 1fr; /* 1 row */
-  gap: 10px; /* Adjust the gap between items */
-}
-
-/* Ensure the card spans only the first column */
-.card-grid .card {
-  grid-column: 1;
+  font-size: 16px;
+  justify-content: center;
 }
