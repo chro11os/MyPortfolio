@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const textBoxes = document.querySelectorAll('.text-box');
     const previewBox = document.getElementById('previewBox');
     let currentExpandedBox = null;
-
+        
     // Function to close the preview box and current expanded box
     function closePreview() {
         if (currentExpandedBox) {
