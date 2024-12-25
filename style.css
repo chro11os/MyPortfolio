@@ -1,0 +1,31 @@
+body {
+    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: grid;
+    place-items: center; /* Centers content both horizontally and vertically */
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px; /* Add spacing between text */
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+bold-text-title {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
